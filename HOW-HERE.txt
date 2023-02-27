@@ -1,0 +1,27 @@
+
+ON WINDOWS WITH XAMPP:
+Add in the file \xampp\apache\conf\extra\httpd-vhosts.conf
+
+...
+<VirtualHost *:80>
+	DocumentRoot "E:/Workspaces/http/xampp/xampp/htdocs"
+	ServerName heichtwo.com
+</VirtualHost>
+
+<VirtualHost *:80>
+	DocumentRoot "E:/Workspaces/http/xampp/xampp/htdocs/drupal-10/drupal-base"
+	ServerName e-commerce.heichtwo.com
+</VirtualHost>
+
+<VirtualHost *:80>
+	DocumentRoot "E:/Workspaces/http/xampp/xampp/htdocs/drupal-10/drupal-base"
+	ServerName food-magazine.heichtwo.com
+</VirtualHost>
+
+Add in the file hosts
+
+...
+# Added for drupal multisite
+127.0.0.1 heichtwo.com
+127.0.0.1 food-magazine.heichtwo.com
+127.0.0.1 e-commerce.heichtwo.com
